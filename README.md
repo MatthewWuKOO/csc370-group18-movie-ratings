@@ -18,3 +18,4 @@ This project builds a MySQL-backed movie rating system. Users can browse movies,
 2. As we learn FDs in ERDs, minimal bases and projecting FDs, 3NF, and 4NF, I will use an example from my tables for each lesson. I will check whether the lesson shows a problem in my design.
 3. By the end of the sprint, I will update my ERD or SQL if needed.
 4. Course-level goal: I will check that my ERD and SQL tables match my movie-rating requirements, and fix any mistakes I find.
+5. Optional: Start learning about the Medallion data model and sketch how I could keep the original data, clean it, and use it for movie-rating summaries
