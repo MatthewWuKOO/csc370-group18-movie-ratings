@@ -21,6 +21,7 @@ CREATE TABLE genre (
     genre_id INT NOT NULL,
     genre_name VARCHAR(60) NOT NULL,
     PRIMARY KEY (genre_id)
+    UNIQUE (genre_name)
 );
 -- rating, connect user_id with movie_id
 CREATE TABLE rating (
