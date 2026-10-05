@@ -14,6 +14,7 @@ CREATE TABLE movie (
     title VARCHAR(200) NOT NULL,
     release_year SMALLINT NOT NULL,
     PRIMARY KEY (movie_id)
+    UNIQUE (title)
 );
 -- genre
 CREATE TABLE genre (
