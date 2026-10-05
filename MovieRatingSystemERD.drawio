@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="Thpo4xy4P9GvWnJc7YEC">
-    <mxGraphModel dx="587" dy="795" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="-137" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -51,9 +51,6 @@
         </mxCell>
         <mxCell id="VVQKlA-Rl1loPN9koeLZ-51" parent="1" style="text;html=1;strokeColor=none;fillColor=none;fontColor=#334155;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=25;fontStyle=1;fontColor=#172033;" value="Movie Rating System — Conceptual ERD" vertex="1">
           <mxGeometry height="40" width="690" x="1390" y="860" as="geometry" />
-        </mxCell>
-        <mxCell id="VVQKlA-Rl1loPN9koeLZ-52" parent="1" style="text;html=1;strokeColor=none;fillColor=none;fontColor=#334155;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=14;" value="Underlined attributes identify entities. Every Rates pair (User, Movie) occurs at most once. review_text is optional; score is a whole number from 1 to 5. Movie averages and rating counts are calculated from ratings." vertex="1">
-          <mxGeometry height="58" width="1160" x="1390" y="1450" as="geometry" />
         </mxCell>
         <mxCell id="VVQKlA-Rl1loPN9koeLZ-53" edge="1" parent="1" source="VVQKlA-Rl1loPN9koeLZ-36" style="edgeStyle=none;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#56657A;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="VVQKlA-Rl1loPN9koeLZ-37">
           <mxGeometry relative="1" as="geometry" />
