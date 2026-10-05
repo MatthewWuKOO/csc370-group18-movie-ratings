@@ -14,5 +14,7 @@ This project builds a MySQL-backed movie rating system. Users can browse movies,
 
 
 ## Goals for sprint 1
-1. Only five tables work with simple test data; check how the design can improve after the Advanced Relational Design lessons
-2. 
+1. I have requirements, an ERD, and five SQL tables for my movie-rating system. I still need to check the design using the Advanced Relational Design lessons.
+2. As we learn FDs in ERDs, minimal bases and projecting FDs, 3NF, and 4NF, I will use an example from my tables for each lesson. I will check whether the lesson shows a problem in my design.
+3. By the end of the sprint, I will update my ERD or SQL if needed.
+4. Course-level goal: I will check that my ERD and SQL tables match my movie-rating requirements, and fix any mistakes I find.
