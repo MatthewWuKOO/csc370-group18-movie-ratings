@@ -1,7 +1,6 @@
 # CSC370 group18: movie ratings
 This project builds a MySQL-backed movie rating system. Users can browse movies, search by title or genre, and rate each movie from 1 to 5 with an optional short review. They can edit or remove their own rating and review. The system will display other users’ reviews, each movie’s average score, and its number of ratings.
 
-The database will store users, movies, genres, ratings, reviews, and the time each rating was made. Each user can have one current rating and review per movie.
 
 ## Requirements
 1. Each user has a unique account and username.
@@ -12,3 +11,8 @@ The database will store users, movies, genres, ratings, reviews, and the time ea
 6. Users can change or delete their own ratings and reviews.
 7. Users can search movies by title or genre and read other users’ reviews.
 8. The system calculates each movie’s rating count and average from its ratings.
+
+
+## Goals for sprint 1
+1. Only five tables work with simple test data; check how the design can improve after the Advanced Relational Design lessons
+2. 
