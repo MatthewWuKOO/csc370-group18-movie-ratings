@@ -5,30 +5,32 @@ This project builds a MySQL-backed movie rating system. Users can search movies 
 ## Requirements
 
 1. Each user has a unique account and username.
-2. Each movie has a title, release year, and one or more genres.
+2. Each movie has a title, release year, and can belong to multiple genres.
 3. Each user can have only one active rating per movie.
 4. Ratings are integers from 1 to 5, with an optional review and timestamp.
 5. Users can edit or delete their own ratings.
 6. Users can search movies and view reviews, average scores, and rating counts.
 
-## Goals for Sprint 1
+## Goals for Sprint 1 (Set at Project Kick-Off)
 
-1. Complete the requirements, ERD, and five SQL tables.
-2. Apply Functional Dependencies, Minimal Basis, FD Projection, 3NF, and 4NF to review the database design.
+1. Review the existing requirements, ERD, and five SQL tables using Advanced Relational Design.
+2. Apply Functional Dependencies, Minimal Basis, FD Projection, 3NF, and 4NF to evaluate the database design.
 3. Improve the ERD or SQL if necessary.
-4. Verify that the database design matches the project requirements.
+4. Verify that the ERD and SQL match the project requirements.
 5. Optional: Explore the Medallion data model.
 
 ## Sprint 1 Progress
 
 - Fixed the SQL syntax errors identified in the Project Kick-Off feedback.
-- Successfully tested the five tables and database constraints using MySQL 8.
-- Reviewed the database design using Functional Dependencies, Minimal Basis, FD Projection, 3NF, BCNF, and 4NF.
-- Identified possible improvements to the database design, including the movie title constraint.
+- Removed the UNIQUE constraint on movie titles to allow different movies to share the same title.
+- Identified an additional SQL syntax error in the current version that still needs correction.
+- Started reviewing the database design using Functional Dependencies and Normalization concepts.
+
+The normalization analysis is not yet finalized, and the optional Medallion model has not been implemented.
 
 ## Current Limitations
 
-The database structure is established, but it does not yet include SQL queries for movie searching or rating statistics. The previous submission also lacked clear normalization evidence and measurable success criteria.
+The database still requires final SQL validation and documented normalization evidence. It also does not yet include SQL queries for movie searching or calculating rating statistics.
 
 ## Goals for Sprint 2 — Advanced SQL
 
