@@ -31,7 +31,10 @@ This project builds a MySQL-backed movie rating system. Users can search movies 
 
 ## Current Limitations
 
-The database still requires final SQL validation and documented normalization evidence. It also does not yet include SQL queries for movie searching or calculating rating statistics.
+Advanced SQL queries for movie searching and rating
+statistics are not implemented yet.
+
+The optional Medallion data model was not explored.
 
 ## Goals for Sprint 2 — Advanced SQL
 
