@@ -1,21 +1,44 @@
-# CSC370 group18: movie ratings
-This project builds a MySQL-backed movie rating system. Users can browse movies, search by title or genre, and rate each movie from 1 to 5 with an optional short review. They can edit or remove their own rating and review. The system will display other users’ reviews, each movie’s average score, and its number of ratings.
+# CSC 370 Group 18: Movie Ratings Database
 
+This project builds a MySQL-backed movie rating system. Users can search movies by title or genre, rate movies from 1 to 5, write reviews, and view average ratings.
 
 ## Requirements
+
 1. Each user has a unique account and username.
-2. Each movie has a title and release year and can belong to multiple genres.
-3. A user can rate many movies, but can have only one active rating for each movie.
-4. A user can give a movie rating as an integer from 1 (lowest) to 5(highest), with no half scores such as 3.5.
-5. A rating can include an optional written review and records when it was made.
-6. Users can change or delete their own ratings and reviews.
-7. Users can search movies by title or genre and read other users’ reviews.
-8. The system calculates each movie’s rating count and average from its ratings.
+2. Each movie has a title, release year, and one or more genres.
+3. Each user can have only one active rating per movie.
+4. Ratings are integers from 1 to 5, with an optional review and timestamp.
+5. Users can edit or delete their own ratings.
+6. Users can search movies and view reviews, average scores, and rating counts.
 
+## Goals for Sprint 1
 
-## Goals for sprint 1
-1. I have requirements, an ERD, and five SQL tables for my movie-rating system. I still need to check the design using the Advanced Relational Design lessons.
-2. As we learn FDs in ERDs, minimal bases and projecting FDs, 3NF, and 4NF, I will use an example from my tables for each lesson. I will check whether the lesson shows a problem in my design.
-3. By the end of the sprint, I will update my ERD or SQL if needed.
-4. Course-level goal: I will check that my ERD and SQL tables match my movie-rating requirements, and fix any mistakes I find.
-5. Optional: Start learning about the Medallion data model and sketch how I could keep the original data, clean it, and use it for movie-rating summaries
+1. Complete the requirements, ERD, and five SQL tables.
+2. Apply Functional Dependencies, Minimal Basis, FD Projection, 3NF, and 4NF to review the database design.
+3. Improve the ERD or SQL if necessary.
+4. Verify that the database design matches the project requirements.
+5. Optional: Explore the Medallion data model.
+
+## Sprint 1 Progress
+
+- Created an ERD and five tables: `app_user`, `movie`, `genre`, `rating`, and `movie_genre`.
+- Fixed the SQL syntax errors identified in the previous feedback.
+- Successfully tested database creation and constraints using MySQL 8 on a separate review branch.
+- Prepared an analysis of Functional Dependencies, 3NF, BCNF, and 4NF to evaluate the database design.
+- Identified a possible improvement to the movie title constraint.
+
+The normalization review and proposed design changes are still being checked before merging into the main branch. The optional Medallion model has not been implemented.
+
+## Current Limitations
+
+The database structure is established, but it does not yet include SQL queries for movie searching or rating statistics. The previous submission also lacked clear normalization evidence and measurable success criteria.
+
+## Goals for Sprint 2 — Advanced SQL
+
+| Goal | Course Topic | Success Criteria |
+|---|---|---|
+| Search movies by genre | JOIN | Correct results for 2 tested genres |
+| Calculate average ratings and rating counts | GROUP BY, AVG, COUNT, HAVING | Correct results for 3 movies |
+| Find movies rated above average | Subqueries | Results match expected calculations |
+| Test database queries | SQL Testing | All planned queries execute correctly |
+
