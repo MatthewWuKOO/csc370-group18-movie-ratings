@@ -21,11 +21,13 @@ This project builds a MySQL-backed movie rating system. Users can search movies 
 
 ## Sprint 1 Progress
 
-- Fixed the SQL syntax errors identified in the Project Kick-Off feedback.
-- Removed the UNIQUE constraint on movie titles to allow different movies to share the same title.
-- Started reviewing the database design using Functional Dependencies and Normalization concepts.
-
-The normalization analysis is not yet finalized, and the optional Medallion model has not been implemented.
+- Fixed the SQL syntax errors from the Project Kick-Off.
+- Removed UNIQUE(title) to allow movies with the same title.
+- Completed the Normalization Review, including FDs,
+  Minimal Basis, FD Projection, 3NF, BCNF, and 4NF.
+- Successfully created all five tables in MySQL.
+- Inserted sample data and verified Primary Key,
+  Foreign Key, and CHECK constraints.
 
 ## Current Limitations
 
