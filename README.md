@@ -23,7 +23,6 @@ This project builds a MySQL-backed movie rating system. Users can search movies 
 
 - Fixed the SQL syntax errors identified in the Project Kick-Off feedback.
 - Removed the UNIQUE constraint on movie titles to allow different movies to share the same title.
-- Identified an additional SQL syntax error in the current version that still needs correction.
 - Started reviewing the database design using Functional Dependencies and Normalization concepts.
 
 The normalization analysis is not yet finalized, and the optional Medallion model has not been implemented.
