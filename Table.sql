@@ -1,8 +1,7 @@
-
 CREATE DATABASE IF NOT EXISTS csc370_movie_ratings;
 USE csc370_movie_ratings;
 
--- User
+-- Each user has a unique ID and username.
 CREATE TABLE app_user (
     user_id INT NOT NULL,
     username VARCHAR(50) NOT NULL,
@@ -10,16 +9,15 @@ CREATE TABLE app_user (
     UNIQUE (username)
 );
 
--- Movie
+-- Use movie_id to identify a movie: different movies can share a title.
 CREATE TABLE movie (
     movie_id INT NOT NULL,
     title VARCHAR(200) NOT NULL,
     release_year SMALLINT NOT NULL,
-    PRIMARY KEY (movie_id),
-    UNIQUE (title)
+    PRIMARY KEY (movie_id)
 );
 
--- Genre
+-- A genre name identifies one genre.
 CREATE TABLE genre (
     genre_id INT NOT NULL,
     genre_name VARCHAR(60) NOT NULL,
@@ -27,7 +25,7 @@ CREATE TABLE genre (
     UNIQUE (genre_name)
 );
 
--- Rating
+-- Each user can have at most one active rating per movie.
 CREATE TABLE rating (
     user_id INT NOT NULL,
     movie_id INT NOT NULL,
@@ -43,7 +41,7 @@ CREATE TABLE rating (
         CHECK (score BETWEEN 1 AND 5)
 );
 
--- Movie Genre
+-- Movies and genres have a many-to-many relationship.
 CREATE TABLE movie_genre (
     movie_id INT NOT NULL,
     genre_id INT NOT NULL,
