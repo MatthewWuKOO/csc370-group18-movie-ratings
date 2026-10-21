@@ -21,13 +21,10 @@ This project builds a MySQL-backed movie rating system. Users can search movies 
 
 ## Sprint 1 Progress
 
-- Created an ERD and five tables: `app_user`, `movie`, `genre`, `rating`, and `movie_genre`.
-- Fixed the SQL syntax errors identified in the previous feedback.
-- Successfully tested database creation and constraints using MySQL 8 on a separate review branch.
-- Prepared an analysis of Functional Dependencies, 3NF, BCNF, and 4NF to evaluate the database design.
-- Identified a possible improvement to the movie title constraint.
-
-The normalization review and proposed design changes are still being checked before merging into the main branch. The optional Medallion model has not been implemented.
+- Fixed the SQL syntax errors identified in the Project Kick-Off feedback.
+- Successfully tested the five tables and database constraints using MySQL 8.
+- Reviewed the database design using Functional Dependencies, Minimal Basis, FD Projection, 3NF, BCNF, and 4NF.
+- Identified possible improvements to the database design, including the movie title constraint.
 
 ## Current Limitations
 
