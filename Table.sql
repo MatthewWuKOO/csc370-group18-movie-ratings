@@ -15,7 +15,7 @@ CREATE TABLE movie (
     movie_id INT NOT NULL,
     title VARCHAR(200) NOT NULL,
     release_year SMALLINT NOT NULL,
-    PRIMARY KEY (movie_id),
+    PRIMARY KEY (movie_id)
 );
 
 -- Genre
