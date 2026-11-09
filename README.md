@@ -101,8 +101,6 @@ For the video demonstration:
 SOURCE sprint2/video_demo.sql
 ```
 
-**Warning:** The reset script permanently deletes existing data in the five project tables and recreates them using Table.sql. The video demonstration also runs the reset script.
-
 ## Current Limitations
 
 The project currently provides SQL queries rather than a graphical interface. Query correctness has been tested, but query execution algorithms and performance have not yet been analyzed.
