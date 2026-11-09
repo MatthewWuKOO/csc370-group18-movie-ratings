@@ -77,8 +77,6 @@ The main challenge was making the database independent of Sprint 1 data. This wa
 
 Requirements: MySQL 8.0.
 
-Open a terminal in the project root directory and connect to MySQL.
-
 Run the following commands in the MySQL client:
 
 ```sql
