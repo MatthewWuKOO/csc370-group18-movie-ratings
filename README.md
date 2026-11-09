@@ -103,7 +103,9 @@ SOURCE sprint2/video_demo.sql
 
 ## Current Limitations
 
-The project currently provides SQL queries rather than a graphical interface. Query correctness has been tested, but query execution algorithms and performance have not yet been analyzed.
+Although all Sprint 2 goals were completed, query performance, transaction management, and database security have not yet been fully explored.
+
+These areas will be addressed in the Final stage.
 
 
 ## Goals for Final
