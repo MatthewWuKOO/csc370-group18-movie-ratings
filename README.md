@@ -106,27 +106,23 @@ Although all Sprint 2 goals were completed, query performance, transaction manag
 These areas will be addressed in the Final stage.
 
 
+
 ## Goals for Final
 
-The Final stage will cover the remaining course modules: ACID Transactions, Basic Security, and Analysing Query Algorithms.
+The Final stage will cover ACID Transactions, Basic Security, and Analysing Query Algorithms.
 
 | Goal | Course Topic | Success Criteria |
 |---|---|---|
-| Implement transactions | ACID Transactions | Test COMMIT and ROLLBACK with rating operations |
-| Improve database security | Basic Security | Create a read-only user and verify access restrictions |
-| Analyze query execution | Analysing Query Algorithms | Explain execution plans for 3 existing queries |
-| Evaluate query performance | Analysing Query Algorithms | Compare query execution using 2 dataset sizes |
+| Implement transactions | ACID Transactions | Verify COMMIT and ROLLBACK using rating operations |
+| Improve database security | Basic Security | Create a read-only user and test access restrictions |
+| Analyze B+-tree operations | External Memory Model and Index Design | Analyze lookup, range query, and insert I/O costs |
+| Compare logical query plans | SQL Query Plans | Construct two equivalent plans for an existing JOIN query |
+| Analyze query optimization | Physical Query Optimization | Compare the cost of applying selections before and after joins |
 
 ### Planned Work
 
-- **Transactions:** Use transactions to manage rating updates and deletions, and verify that ROLLBACK restores previous data.
-- **Security:** Apply database user permissions and test whether unauthorized modifications are rejected.
-- **Query Algorithms:** Use EXPLAIN to examine how MySQL executes JOIN, aggregation, and subqueries.
-- **Performance:** Compare query execution with different dataset sizes and investigate possible improvements.
-
-### Expected Final Results
-
-- Working transaction examples with successful COMMIT and ROLLBACK tests.
-- Database access restrictions with verification.
-- Execution plans for the three existing SQL queries.
-- Query performance comparisons and possible improvements.
+- **Transactions:** Test COMMIT and ROLLBACK when modifying ratings.
+- **Security:** Create a read-only database user and verify access restrictions.
+- **B+-tree Analysis:** Analyze lookup, range query, and insertion I/O costs using the external memory model.
+- **Logical Query Plans:** Construct equivalent query plans for the existing Genre Search query.
+- **Query Optimization:** Analyze how pushing selections through joins can affect query execution cost.
