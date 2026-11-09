@@ -87,7 +87,7 @@ SOURCE sprint2/01_data.sql
 SOURCE sprint2/02_validate.sql
 ```
 
-Run the implemented queries:
+Run the implemented queries (only after the above commands):
 
 ```sql
 SOURCE sprint2/queries/genre_search.sql
